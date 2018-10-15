@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import { Menu, X } from 'react-feather'
 
 import Logo from './Logo'

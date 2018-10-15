@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import 'modern-normalize/modern-normalize.css'
 

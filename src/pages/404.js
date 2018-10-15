@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import { StaticQuery, graphql } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import _get from 'lodash/get'
 import AlertTriangle from 'react-feather/dist/icons/alert-triangle'
 

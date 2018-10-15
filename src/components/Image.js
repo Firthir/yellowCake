@@ -1,5 +1,6 @@
 import React from 'react'
 import GatsbyImage from 'gatsby-image'
+import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import _get from 'lodash/get'
 
