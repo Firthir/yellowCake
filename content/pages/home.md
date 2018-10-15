@@ -2,13 +2,13 @@
 template: HomePage
 slug: ''
 title: Hello World!
-featuredImage: /images/uploads/paint1.jpg
+featuredImage: /images/uploads/yellowcake.jpg
 subtitle: This is the home page subtitle test
 meta:
   title: ''
 ---
 
-# Whitesmoke
+# Yellowcake
 
 An opinionated starter project for creating lightning-fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
 
@@ -18,9 +18,8 @@ An opinionated starter project for creating lightning-fast websites with [Gatsby
 ## See also
 
 [Netlify CMS Docs](https://www.netlifycms.org/docs/)  
-[Netlify CMS Repo](https://github.com/netlify/netlify-cms)  
-[Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)
+[Netlify CMS Repo](https://github.com/netlify/netlify-cms)
 
 ## Get going
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/whitesmoke&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)

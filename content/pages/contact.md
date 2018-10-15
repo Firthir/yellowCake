@@ -2,7 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact
-featuredImage: /images/uploads/paint2.jpg
+featuredImage: /images/uploads/yellowcake2.jpg
 subtitle: Contact Page has a subtitle
 address: '404 James St, Burleigh Heads QLD 4220'
 phone: 0987 123 456

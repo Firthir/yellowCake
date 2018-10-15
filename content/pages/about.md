@@ -2,13 +2,13 @@
 template: AboutPage
 slug: about
 title: About page title
-featuredImage: /images/uploads/smoke3.jpg
+featuredImage: /images/uploads/yellowcake1.jpg
 subtitle: Test subtitle
 section1: >-
   ## Lorem Ipsum
 
 
-  [Link test](/images/uploads/isabella-juskova.jpg)
+  [Link test](/images/uploads/yellowcake2.jpg)
 
 
   ### Embed Test
@@ -30,4 +30,3 @@ section2: |-
   vestibulum.
 testImage: /images/uploads/paint2.jpg
 ---
-
