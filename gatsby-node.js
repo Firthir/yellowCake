@@ -3,8 +3,8 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ action, graphql }) => {
-  const { createPage } = action
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions
 
   return graphql(`
     {
@@ -61,8 +61,8 @@ exports.createPages = ({ action, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, action, getNode }) => {
-  const { createNodeField } = action
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   // convert frontmatter images
   fmImagesToRelative(node)
