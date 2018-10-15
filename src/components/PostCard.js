@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import _map from 'lodash/map'
+import { Link } from 'gatsby'
 
 import Image from './Image'
 import './PostCard.css'

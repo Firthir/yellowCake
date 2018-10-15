@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import 'modern-normalize/modern-normalize.css'
 
@@ -14,40 +14,43 @@ export default ({ children, data }) => {
   const { siteTitle, siteUrl, socialMediaCard, headerScripts } =
     data.settingsYaml || {}
   return (
-    <Fragment>
-      <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
-        {/* Add font link tags here */}
-      </Helmet>
-
-      <Meta
-        headerScripts={headerScripts}
-        absoluteImageUrl={
-          socialMediaCard &&
-          socialMediaCard.image &&
-          siteUrl + socialMediaCard.image
+    <StaticQuery
+      query={graphql`
+        query IndexLayoutQuery {
+          settingsYaml {
+            siteTitle
+            siteDescription
+            headerScripts
+            socialMediaCard {
+              image
+            }
+          }
         }
-      />
+      `}
+      render={data => (
+        <Fragment>
+          <Helmet defaultTitle={siteTitle} titleTemplate={`%s | ${siteTitle}`}>
+            {/* Add font link tags here */}
+          </Helmet>
 
-      <GithubCorner url="https://github.com/thriveweb/whitesmoke" />
+          <Meta
+            headerScripts={headerScripts}
+            absoluteImageUrl={
+              socialMediaCard &&
+              socialMediaCard.image &&
+              siteUrl + socialMediaCard.image
+            }
+          />
 
-      <Nav />
+          <GithubCorner url="https://github.com/thriveweb/whitesmoke" />
 
-      <Fragment>{children()}</Fragment>
+          <Nav />
 
-      <Footer />
-    </Fragment>
+          <Fragment>{children()}</Fragment>
+
+          <Footer />
+        </Fragment>
+      )}
+    />
   )
 }
-
-export const query = graphql`
-  query IndexLayoutQuery {
-    settingsYaml {
-      siteTitle
-      siteDescription
-      headerScripts
-      socialMediaCard {
-        image
-      }
-    }
-  }
-`
