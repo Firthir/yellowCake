@@ -50,7 +50,7 @@ module.exports = {
 
     // css (replace with gatsby-plugin-sass for v2)
     {
-      resolve: `gatsby-plugin-postcss-sass`,
+      resolve: `gatsby-plugin-sass`,
       options: {
         postCssPlugins: [
           postcssPresetEnv({
@@ -59,7 +59,6 @@ module.exports = {
         ]
       }
     },
-
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
